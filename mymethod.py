@@ -212,19 +212,19 @@ def main():
     print("NOW OPERATING ON VAL")
     dataset_val = df_to_dataset(df_val, batch_size, model, tokenizer)
     print("NOW SAVING VAL")
-    torch.save(dataset_val, "data/mymethod/take00/val.pt")
+    torch.save(dataset_val, "data/mymethod/val.pt")
     print("VAL SAVED")
 
     print("NOW RUNNING TEST")
     dataset_test = df_to_dataset(df_test, batch_size, model, tokenizer)
     print("NOW SAVING TEST")
-    torch.save(dataset_test, "data/mymethod/take00/testing.pt")
+    torch.save(dataset_test, "data/mymethod/testing.pt")
     print("TEST SAVED")
 
     print("NOW RUNNING TRAIN")
     dataset_train = df_to_dataset(df_train, batch_size, model, tokenizer)
     print("NOW SAVING TRAIN")
-    torch.save(dataset_train, "data/mymethod/val.pt")
+    torch.save(dataset_train, "data/val.pt")
     print("TRAIN SAVED")
 
     return 1
