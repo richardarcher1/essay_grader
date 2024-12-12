@@ -1,5 +1,5 @@
 
-local_ = True
+local_ = False
 if local_:
     base_model = "/home/richardarcher/Dropbox/Sci24_LLM_Polarization/project_/weights_local/models--meta-llama--Meta-Llama-3.1-8B-Instruct/snapshots/0e9e39f249a16976918f6564b8830bc894c89659"
     batch_size = 1
