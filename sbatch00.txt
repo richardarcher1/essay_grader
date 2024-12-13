@@ -121,7 +121,7 @@ Lmod Web Sites
 
 
 GPU CHECK
-Thu Dec 12 18:43:22 2024       
+Thu Dec 12 19:19:06 2024       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
 |-----------------------------------------+------------------------+----------------------+
@@ -134,11 +134,11 @@ Thu Dec 12 18:43:22 2024
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 |   1  Quadro RTX 8000                On  |   00000000:81:00.0 Off |                    0 |
-| N/A   26C    P8             13W /  250W |       0MiB /  46080MiB |      0%      Default |
+| N/A   25C    P8             14W /  250W |       0MiB /  46080MiB |      0%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 |   2  Quadro RTX 8000                On  |   00000000:E2:00.0 Off |                    0 |
-| N/A   25C    P8             12W /  250W |       0MiB /  46080MiB |      0%      Default |
+| N/A   24C    P8             12W /  250W |       0MiB /  46080MiB |      0%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
                                                                                          
@@ -154,20 +154,14 @@ PYTHON SCRIPT:
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: richard-archer (yale-som). Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /gpfs/home/rka28/essay_grader/wandb/run-20241212_184413-72qt4czd
+wandb: Run data is saved locally in /gpfs/home/rka28/essay_grader/wandb/run-20241212_191915-lauf0di1
 wandb: Run `wandb offline` to turn off syncing.
 wandb: Syncing run essay_mymethod00
 wandb: ⭐️ View project at https://wandb.ai/yale-som/optim00
-wandb: 🚀 View run at https://wandb.ai/yale-som/optim00/runs/72qt4czd
+wandb: 🚀 View run at https://wandb.ai/yale-som/optim00/runs/lauf0di1
 `low_cpu_mem_usage` was None, now default to True since model is quantized.
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:08<00:26,  8.81s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:17<00:17,  8.72s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:25<00:08,  8.51s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:27<00:00,  5.92s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:27<00:00,  6.92s/it]
-NOW RUNNING TRAIN
-CURRENTLY OPERATING ON IX=0/10403
-CURRENTLY OPERATING ON IX=4000/10403
-CURRENTLY OPERATING ON IX=8000/10403
-NOW SAVING TRAIN
-TRAIN SAVED
-[1;34mwandb[0m: 🚀 View run [33messay_mymethod00[0m at: [34mhttps://wandb.ai/yale-som/optim00/runs/72qt4czd[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20241212_184413-72qt4czd/logs[0m
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:11,  3.86s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.88s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:11<00:03,  3.86s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  2.71s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.13s/it]
+[1;34mwandb[0m: 🚀 View run [33messay_mymethod00[0m at: [34mhttps://wandb.ai/yale-som/optim00/runs/lauf0di1[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20241212_191915-lauf0di1/logs[0m
 python path executed
 SBATCH FINISHED
