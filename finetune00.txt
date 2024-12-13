@@ -121,7 +121,7 @@ Lmod Web Sites
 
 
 GPU CHECK
-Thu Dec 12 21:14:21 2024       
+Thu Dec 12 21:18:00 2024       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
 |-----------------------------------------+------------------------+----------------------+
@@ -130,15 +130,15 @@ Thu Dec 12 21:14:21 2024
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA A100 80GB PCIe          On  |   00000000:21:00.0 Off |                    0 |
-| N/A   50C    P0             83W /  300W |   72451MiB /  81920MiB |    100%      Default |
+| N/A   50C    P0             81W /  300W |   72451MiB /  81920MiB |    100%      Default |
 |                                         |                        |             Disabled |
 +-----------------------------------------+------------------------+----------------------+
 |   1  NVIDIA A100 80GB PCIe          On  |   00000000:81:00.0 Off |                    0 |
-| N/A   35C    P0             72W /  300W |   59929MiB /  81920MiB |    100%      Default |
+| N/A   35C    P0             70W /  300W |   59929MiB /  81920MiB |    100%      Default |
 |                                         |                        |             Disabled |
 +-----------------------------------------+------------------------+----------------------+
 |   2  NVIDIA A100 80GB PCIe          On  |   00000000:E2:00.0 Off |                    0 |
-| N/A   36C    P0             70W /  300W |   59909MiB /  81920MiB |    100%      Default |
+| N/A   37C    P0             73W /  300W |   59909MiB /  81920MiB |    100%      Default |
 |                                         |                        |             Disabled |
 +-----------------------------------------+------------------------+----------------------+
                                                                                          
@@ -156,138 +156,10 @@ PYTHON SCRIPT:
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: richard-archer (yale-som). Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /gpfs/home/rka28/essay_grader/wandb/run-20241212_211516-l839jdv3
+wandb: Run data is saved locally in /gpfs/home/rka28/essay_grader/wandb/run-20241212_211819-5p1adqqg
 wandb: Run `wandb offline` to turn off syncing.
 wandb: Syncing run cluster_run_01
 wandb: ⭐️ View project at https://wandb.ai/yale-som/optim00
-wandb: 🚀 View run at https://wandb.ai/yale-som/optim00/runs/l839jdv3
+wandb: 🚀 View run at https://wandb.ai/yale-som/optim00/runs/5p1adqqg
 TRY BIGGER GPU
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:11<00:33, 11.10s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:22<00:22, 11.22s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:33<00:11, 11.05s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:35<00:00,  7.66s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:35<00:00,  8.93s/it]
-True
-0.15% of parameters are trainable
-6815744many parameters are trainable
-df_train.shape=(10403, 4)
-Map:   0%|          | 0/10403 [00:00<?, ? examples/s]Map:  10%|▉         | 1000/10403 [00:00<00:03, 2813.87 examples/s]Map:  19%|█▉        | 2000/10403 [00:00<00:02, 3202.27 examples/s]Map:  29%|██▉       | 3000/10403 [00:00<00:02, 3443.04 examples/s]Map:  38%|███▊      | 4000/10403 [00:01<00:01, 4131.40 examples/s]Map:  48%|████▊     | 5000/10403 [00:01<00:01, 4691.43 examples/s]Map:  58%|█████▊    | 6000/10403 [00:01<00:00, 5117.21 examples/s]Map:  67%|██████▋   | 7000/10403 [00:01<00:00, 5348.31 examples/s]Map:  77%|███████▋  | 8000/10403 [00:01<00:00, 5379.76 examples/s]Map:  87%|████████▋ | 9000/10403 [00:01<00:00, 5340.20 examples/s]Map:  96%|█████████▌| 10000/10403 [00:02<00:00, 5019.06 examples/s]Map: 100%|██████████| 10403/10403 [00:02<00:00, 4480.42 examples/s]
-Map:   0%|          | 0/1952 [00:00<?, ? examples/s]Map:  51%|█████     | 1000/1952 [00:00<00:00, 4565.65 examples/s]Map: 100%|██████████| 1952/1952 [00:00<00:00, 4743.43 examples/s]Map: 100%|██████████| 1952/1952 [00:00<00:00, 4658.50 examples/s]
-Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
-[2024-12-12 21:16:09,677] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-  0%|          | 0/1950 [00:00<?, ?it/s]Traceback (most recent call last):
-  File "/gpfs/home/rka28/essay_grader/3_llama_finetune.py", line 230, in <module>
-    main()
-  File "/gpfs/home/rka28/essay_grader/3_llama_finetune.py", line 225, in main
-    trainer.train()
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/trainer.py", line 2123, in train
-    return inner_training_loop(
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
-    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/trainer.py", line 3579, in training_step
-    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/trainer.py", line 3633, in compute_loss
-    outputs = model(**inputs)
-              ^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 465, in _fn
-    return fn(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/utils/operations.py", line 823, in forward
-    return model_forward(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/utils/operations.py", line 811, in __call__
-    return convert_to_fp32(self.model_forward(*args, **kwargs))
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/peft/peft_model.py", line 1642, in forward
-    with self._enable_peft_forward_hooks(**kwargs):
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/peft/peft_model.py", line 1644, in torch_dynamo_resume_in_forward_at_1642
-    return self.base_model(
-           ^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/peft/tuners/tuners_utils.py", line 197, in forward
-    return self.model.forward(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/hooks.py", line 170, in new_forward
-    output = module._old_forward(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py", line 1135, in forward
-    @add_start_docstrings_to_model_forward(LLAMA_INPUTS_DOCSTRING)
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py", line 1214, in torch_dynamo_resume_in_forward_at_1190
-    loss = self.loss_function(logits=logits, labels=labels, vocab_size=self.config.vocab_size, **loss_kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/loss/loss_utils.py", line 32, in ForCausalLMLoss
-    def ForCausalLMLoss(
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 632, in _fn
-    return fn(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_functorch/aot_autograd.py", line 1100, in forward
-    return compiled_fn(full_args)
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 308, in runtime_wrapper
-    all_outs = call_func_at_runtime_with_args(
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_functorch/_aot_autograd/utils.py", line 124, in call_func_at_runtime_with_args
-    out = normalize_as_list(f(args))
-                            ^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_functorch/_aot_autograd/utils.py", line 98, in g
-    return f(*args)
-           ^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/autograd/function.py", line 575, in apply
-    return super().apply(*args, **kwargs)  # type: ignore[misc]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 1525, in forward
-    fw_outs = call_func_at_runtime_with_args(
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_functorch/_aot_autograd/utils.py", line 124, in call_func_at_runtime_with_args
-    out = normalize_as_list(f(args))
-                            ^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 488, in wrapper
-    return compiled_fn(runtime_args)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 667, in inner_fn
-    outs = compiled_fn(args)
-           ^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_inductor/codecache.py", line 1478, in __call__
-    return self.current_callable(inputs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_inductor/utils.py", line 1977, in run
-    return model(new_inputs)
-           ^^^^^^^^^^^^^^^^^
-  File "/tmp/torchinductor_rka28/25/c25qqsujvwsoeyv2aaogsmd7jkz2xejzkbitcbcpygnh2bvps7jw.py", line 310, in call
-    buf0 = empty_strided_cuda((s0, (-1) + s1, 128256), ((-128256) + (128256*s1), 128256, 1), torch.float32)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 6.23 GiB. GPU 0 has a total capacity of 79.14 GiB of which 2.52 GiB is free. Process 3251284 has 58.49 GiB memory in use. Including non-PyTorch memory, this process has 18.11 GiB memory in use. Of the allocated memory 16.49 GiB is allocated by PyTorch, and 1.12 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-[1;34mwandb[0m: 🚀 View run [33mcluster_run_01[0m at: [34mhttps://wandb.ai/yale-som/optim00/runs/l839jdv3[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20241212_211516-l839jdv3/logs[0m
-Traceback (most recent call last):
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/bin/accelerate", line 10, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/commands/accelerate_cli.py", line 48, in main
-    args.func(args)
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/commands/launch.py", line 1168, in launch_command
-    simple_launcher(args)
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/commands/launch.py", line 763, in simple_launcher
-    raise subprocess.CalledProcessError(returncode=process.returncode, cmd=cmd)
-subprocess.CalledProcessError: Command '['/gpfs/home/rka28/.conda/envs/gofaster00/bin/python3.12', '3_llama_finetune.py']' returned non-zero exit status 1.
-python path executed
-SBATCH FINISHED
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
