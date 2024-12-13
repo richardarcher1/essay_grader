@@ -8,7 +8,8 @@
 # scp rka28@hpc-sms.som.yale.edu:/gpfs/home/rka28/optimization_final_project/data/2_training_ready/mymethod/take00/training4.pt data/2_training_ready/mymethod/take00/training4.pt
 # scp rka28@hpc-sms.som.yale.edu:/gpfs/home/rka28/optimization_final_project/data/2_training_ready/embedding00/train_dataset01.pth data/2_training_ready/embedding00/
 # scp -r data/ rka28@hpc-sms.som.yale.edu:/gpfs/home/rka28/essay_grader/data
+scp -r rka28@hpc-sms.som.yale.edu:/gpfs/home/rka28/essay_grader/weights weights/
 
-scp rka28@hpc-sms.som.yale.edu:/gpfs/home/rka28/essay_grader/data/mymethod/training.pt data/mymethod/training.pt
+# scp rka28@hpc-sms.som.yale.edu:/gpfs/home/rka28/essay_grader/data/mymethod/training.pt data/mymethod/training.pt
 # scp rka28@hpc-sms.som.yale.edu:/gpfs/home/rka28/essay_grader/data/mymethod/testing.pt data/mymethod/testing.pt
 # scp rka28@hpc-sms.som.yale.edu:/gpfs/home/rka28/essay_grader/data/mymethod/val.pt data/mymethod/val.pt
