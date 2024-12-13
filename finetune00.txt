@@ -121,7 +121,7 @@ Lmod Web Sites
 
 
 GPU CHECK
-Thu Dec 12 20:57:22 2024       
+Thu Dec 12 20:59:49 2024       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
 |-----------------------------------------+------------------------+----------------------+
@@ -130,15 +130,15 @@ Thu Dec 12 20:57:22 2024
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA A100 80GB PCIe          On  |   00000000:21:00.0 Off |                    0 |
-| N/A   56C    P0            301W /  300W |   72451MiB /  81920MiB |    100%      Default |
+| N/A   50C    P0             89W /  300W |   72451MiB /  81920MiB |    100%      Default |
 |                                         |                        |             Disabled |
 +-----------------------------------------+------------------------+----------------------+
 |   1  NVIDIA A100 80GB PCIe          On  |   00000000:81:00.0 Off |                    0 |
-| N/A   35C    P0             62W /  300W |   59929MiB /  81920MiB |      0%      Default |
+| N/A   37C    P0             75W /  300W |   59929MiB /  81920MiB |    100%      Default |
 |                                         |                        |             Disabled |
 +-----------------------------------------+------------------------+----------------------+
 |   2  NVIDIA A100 80GB PCIe          On  |   00000000:E2:00.0 Off |                    0 |
-| N/A   36C    P0             62W /  300W |   59909MiB /  81920MiB |      0%      Default |
+| N/A   37C    P0             71W /  300W |   59909MiB /  81920MiB |    100%      Default |
 |                                         |                        |             Disabled |
 +-----------------------------------------+------------------------+----------------------+
                                                                                          
@@ -147,31 +147,31 @@ Thu Dec 12 20:57:22 2024
 |  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
 |        ID   ID                                                               Usage      |
 |=========================================================================================|
-|    0   N/A  N/A   3251284      C   python                                      72440MiB |
-|    1   N/A  N/A   3251284      C   python                                      59918MiB |
-|    2   N/A  N/A   3251284      C   python                                      59898MiB |
+|    0   N/A  N/A   3396871      C   python                                      72440MiB |
+|    1   N/A  N/A   3396871      C   python                                      59918MiB |
+|    2   N/A  N/A   3396871      C   python                                      59898MiB |
 +-----------------------------------------------------------------------------------------+
 ===============================================================================================================
 PYTHON SCRIPT:
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: richard-archer (yale-som). Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /gpfs/home/rka28/essay_grader/wandb/run-20241212_205737-i1dzfi4f
+wandb: Run data is saved locally in /gpfs/home/rka28/essay_grader/wandb/run-20241212_210006-9xcwlgy8
 wandb: Run `wandb offline` to turn off syncing.
 wandb: Syncing run cluster_run_01
 wandb: ⭐️ View project at https://wandb.ai/yale-som/optim00
-wandb: 🚀 View run at https://wandb.ai/yale-som/optim00/runs/i1dzfi4f
+wandb: 🚀 View run at https://wandb.ai/yale-som/optim00/runs/9xcwlgy8
 TRY BIGGER GPU
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:13<00:41, 13.71s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:25<00:24, 12.49s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:36<00:11, 11.88s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:39<00:00,  8.18s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:39<00:00,  9.75s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:10<00:31, 10.49s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:20<00:20, 10.07s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:29<00:09,  9.89s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:32<00:00,  6.87s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:32<00:00,  8.05s/it]
 True
 0.15% of parameters are trainable
 6815744many parameters are trainable
 df_train.shape=(10403, 4)
-Map:   0%|          | 0/10403 [00:00<?, ? examples/s]Map:  10%|▉         | 1000/10403 [00:00<00:03, 2381.03 examples/s]Map:  19%|█▉        | 2000/10403 [00:00<00:02, 2905.32 examples/s]Map:  29%|██▉       | 3000/10403 [00:00<00:02, 3199.02 examples/s]Map:  38%|███▊      | 4000/10403 [00:01<00:01, 3876.74 examples/s]Map:  48%|████▊     | 5000/10403 [00:01<00:01, 4423.23 examples/s]Map:  58%|█████▊    | 6000/10403 [00:01<00:00, 4840.90 examples/s]Map:  67%|██████▋   | 7000/10403 [00:01<00:00, 5084.30 examples/s]Map:  77%|███████▋  | 8000/10403 [00:01<00:00, 5121.25 examples/s]Map:  87%|████████▋ | 9000/10403 [00:02<00:00, 5116.08 examples/s]Map:  96%|█████████▌| 10000/10403 [00:02<00:00, 4817.37 examples/s]Map: 100%|██████████| 10403/10403 [00:02<00:00, 4227.69 examples/s]
-Map:   0%|          | 0/1952 [00:00<?, ? examples/s]Map:  51%|█████     | 1000/1952 [00:00<00:00, 4345.18 examples/s]Map: 100%|██████████| 1952/1952 [00:00<00:00, 4494.08 examples/s]Map: 100%|██████████| 1952/1952 [00:00<00:00, 4420.32 examples/s]
+Map:   0%|          | 0/10403 [00:00<?, ? examples/s]Map:  10%|▉         | 1000/10403 [00:00<00:03, 3017.15 examples/s]Map:  19%|█▉        | 2000/10403 [00:00<00:02, 3300.46 examples/s]Map:  29%|██▉       | 3000/10403 [00:00<00:02, 3474.98 examples/s]Map:  38%|███▊      | 4000/10403 [00:01<00:01, 4146.98 examples/s]Map:  48%|████▊     | 5000/10403 [00:01<00:01, 4688.49 examples/s]Map:  58%|█████▊    | 6000/10403 [00:01<00:00, 5083.72 examples/s]Map:  67%|██████▋   | 7000/10403 [00:01<00:00, 5310.54 examples/s]Map:  77%|███████▋  | 8000/10403 [00:01<00:00, 5287.55 examples/s]Map:  87%|████████▋ | 9000/10403 [00:01<00:00, 5244.72 examples/s]Map:  96%|█████████▌| 10000/10403 [00:02<00:00, 4938.38 examples/s]Map: 100%|██████████| 10403/10403 [00:02<00:00, 4468.79 examples/s]
+Map:   0%|          | 0/1952 [00:00<?, ? examples/s]Map:  51%|█████     | 1000/1952 [00:00<00:00, 4491.51 examples/s]Map: 100%|██████████| 1952/1952 [00:00<00:00, 4654.65 examples/s]Map: 100%|██████████| 1952/1952 [00:00<00:00, 4577.71 examples/s]
 Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
-[2024-12-12 20:58:29,525] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
-  0%|          | 0/650 [00:00<?, ?it/s]/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_inductor/compile_fx.py:167: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+[2024-12-12 21:00:48,703] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+  0%|          | 0/1300 [00:00<?, ?it/s]/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_inductor/compile_fx.py:167: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
   warnings.warn(
 Traceback (most recent call last):
   File "/gpfs/home/rka28/essay_grader/3_llama_finetune.py", line 230, in <module>
@@ -295,21 +295,12 @@ Traceback (most recent call last):
   File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/hooks.py", line 170, in new_forward
     output = module._old_forward(*args, **kwargs)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/bitsandbytes/nn/modules.py", line 484, in forward
-    out = bnb.matmul_4bit(x, self.weight.t(), bias=bias, quant_state=self.weight.quant_state)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/bitsandbytes/autograd/_functions.py", line 579, in matmul_4bit
-    return MatMul4Bit.apply(A, B, out, bias, quant_state)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/autograd/function.py", line 575, in apply
-    return super().apply(*args, **kwargs)  # type: ignore[misc]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/bitsandbytes/autograd/_functions.py", line 509, in forward
-    output = torch.nn.functional.linear(A, F.dequantize_4bit(B, quant_state).to(A.dtype).t(), bias)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 358.00 MiB. GPU 0 has a total capacity of 79.14 GiB of which 233.19 MiB is free. Process 3251284 has 70.74 GiB memory in use. Including non-PyTorch memory, this process has 8.15 GiB memory in use. Of the allocated memory 7.34 GiB is allocated by PyTorch, and 321.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-[1;34mwandb[0m: 🚀 View run [33mcluster_run_01[0m at: [34mhttps://wandb.ai/yale-som/optim00/runs/i1dzfi4f[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20241212_205737-i1dzfi4f/logs[0m
+  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/bitsandbytes/nn/modules.py", line 486, in forward
+    out = out.to(inp_dtype)
+          ^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 358.00 MiB. GPU 0 has a total capacity of 79.14 GiB of which 97.19 MiB is free. Process 3396871 has 70.74 GiB memory in use. Including non-PyTorch memory, this process has 8.29 GiB memory in use. Of the allocated memory 7.07 GiB is allocated by PyTorch, and 735.86 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[1;34mwandb[0m: 🚀 View run [33mcluster_run_01[0m at: [34mhttps://wandb.ai/yale-som/optim00/runs/9xcwlgy8[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20241212_210006-9xcwlgy8/logs[0m
 Traceback (most recent call last):
   File "/gpfs/home/rka28/.conda/envs/gofaster00/bin/accelerate", line 10, in <module>
     sys.exit(main())
