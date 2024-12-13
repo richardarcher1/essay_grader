@@ -117,6 +117,8 @@ def main():
     df_train = pl.read_csv(PATH_data_to_train_on)
     df_test = pl.read_csv(PATH_data_to_test_on)
 
+    print(f"{df_train.shape=}")
+
     # df_train = df_train.sample(n=100_000, seed=0)
     # df_test = df_test.sample(n=10_000, seed=0)
 
