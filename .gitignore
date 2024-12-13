@@ -176,3 +176,9 @@ unzipped
 unzipped/*
 unzipped/
 unzipped*
+
+
+weights
+weights/
+weights/*
+weights*
