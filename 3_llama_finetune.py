@@ -188,12 +188,12 @@ def main():
     training_args = SFTConfig(
         max_seq_length=max_seq_length_needed,
         output_dir=new_model,
-        per_device_train_batch_size=8,
+        per_device_train_batch_size=4,
         per_device_eval_batch_size=2,
         gradient_accumulation_steps=2,  # 4
         # optim="adamw_torch",
-        optim="paged_adamw_32bit",
-        # optim="paged_adamw_8bit",
+        # optim="paged_adamw_32bit",
+        optim="paged_adamw_8bit",
         num_train_epochs=1,
         eval_strategy="steps",
         eval_steps=0.2,
