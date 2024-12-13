@@ -121,7 +121,7 @@ Lmod Web Sites
 
 
 GPU CHECK
-Thu Dec 12 20:59:49 2024       
+Thu Dec 12 21:07:00 2024       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
 |-----------------------------------------+------------------------+----------------------+
@@ -130,15 +130,15 @@ Thu Dec 12 20:59:49 2024
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA A100 80GB PCIe          On  |   00000000:21:00.0 Off |                    0 |
-| N/A   50C    P0             89W /  300W |   72451MiB /  81920MiB |    100%      Default |
+| N/A   50C    P0             87W /  300W |   72451MiB /  81920MiB |    100%      Default |
 |                                         |                        |             Disabled |
 +-----------------------------------------+------------------------+----------------------+
 |   1  NVIDIA A100 80GB PCIe          On  |   00000000:81:00.0 Off |                    0 |
-| N/A   37C    P0             75W /  300W |   59929MiB /  81920MiB |    100%      Default |
+| N/A   38C    P0             71W /  300W |   59929MiB /  81920MiB |    100%      Default |
 |                                         |                        |             Disabled |
 +-----------------------------------------+------------------------+----------------------+
 |   2  NVIDIA A100 80GB PCIe          On  |   00000000:E2:00.0 Off |                    0 |
-| N/A   37C    P0             71W /  300W |   59909MiB /  81920MiB |    100%      Default |
+| N/A   37C    P0             74W /  300W |   59909MiB /  81920MiB |    100%      Default |
 |                                         |                        |             Disabled |
 +-----------------------------------------+------------------------+----------------------+
                                                                                          
@@ -156,161 +156,21 @@ PYTHON SCRIPT:
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: richard-archer (yale-som). Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /gpfs/home/rka28/essay_grader/wandb/run-20241212_210006-9xcwlgy8
+wandb: Run data is saved locally in /gpfs/home/rka28/essay_grader/wandb/run-20241212_210743-sr38iqsj
 wandb: Run `wandb offline` to turn off syncing.
 wandb: Syncing run cluster_run_01
 wandb: ⭐️ View project at https://wandb.ai/yale-som/optim00
-wandb: 🚀 View run at https://wandb.ai/yale-som/optim00/runs/9xcwlgy8
+wandb: 🚀 View run at https://wandb.ai/yale-som/optim00/runs/sr38iqsj
 TRY BIGGER GPU
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:10<00:31, 10.49s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:20<00:20, 10.07s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:29<00:09,  9.89s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:32<00:00,  6.87s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:32<00:00,  8.05s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:11<00:34, 11.53s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:23<00:24, 12.05s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:34<00:11, 11.57s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:37<00:00,  8.11s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:37<00:00,  9.44s/it]
 True
 0.15% of parameters are trainable
 6815744many parameters are trainable
 df_train.shape=(10403, 4)
-Map:   0%|          | 0/10403 [00:00<?, ? examples/s]Map:  10%|▉         | 1000/10403 [00:00<00:03, 3017.15 examples/s]Map:  19%|█▉        | 2000/10403 [00:00<00:02, 3300.46 examples/s]Map:  29%|██▉       | 3000/10403 [00:00<00:02, 3474.98 examples/s]Map:  38%|███▊      | 4000/10403 [00:01<00:01, 4146.98 examples/s]Map:  48%|████▊     | 5000/10403 [00:01<00:01, 4688.49 examples/s]Map:  58%|█████▊    | 6000/10403 [00:01<00:00, 5083.72 examples/s]Map:  67%|██████▋   | 7000/10403 [00:01<00:00, 5310.54 examples/s]Map:  77%|███████▋  | 8000/10403 [00:01<00:00, 5287.55 examples/s]Map:  87%|████████▋ | 9000/10403 [00:01<00:00, 5244.72 examples/s]Map:  96%|█████████▌| 10000/10403 [00:02<00:00, 4938.38 examples/s]Map: 100%|██████████| 10403/10403 [00:02<00:00, 4468.79 examples/s]
-Map:   0%|          | 0/1952 [00:00<?, ? examples/s]Map:  51%|█████     | 1000/1952 [00:00<00:00, 4491.51 examples/s]Map: 100%|██████████| 1952/1952 [00:00<00:00, 4654.65 examples/s]Map: 100%|██████████| 1952/1952 [00:00<00:00, 4577.71 examples/s]
+Map:   0%|          | 0/10403 [00:00<?, ? examples/s]Map:  10%|▉         | 1000/10403 [00:00<00:03, 2874.35 examples/s]Map:  19%|█▉        | 2000/10403 [00:00<00:02, 3217.63 examples/s]Map:  29%|██▉       | 3000/10403 [00:00<00:02, 3424.43 examples/s]Map:  38%|███▊      | 4000/10403 [00:01<00:01, 4099.30 examples/s]Map:  48%|████▊     | 5000/10403 [00:01<00:01, 4638.00 examples/s]Map:  58%|█████▊    | 6000/10403 [00:01<00:00, 5038.62 examples/s]Map:  67%|██████▋   | 7000/10403 [00:01<00:00, 5262.26 examples/s]Map:  77%|███████▋  | 8000/10403 [00:01<00:00, 5290.82 examples/s]Map:  87%|████████▋ | 9000/10403 [00:01<00:00, 5249.34 examples/s]Map:  96%|█████████▌| 10000/10403 [00:02<00:00, 4937.13 examples/s]Map: 100%|██████████| 10403/10403 [00:02<00:00, 4432.46 examples/s]
+Map:   0%|          | 0/1952 [00:00<?, ? examples/s]Map:  51%|█████     | 1000/1952 [00:00<00:00, 4317.80 examples/s]Map: 100%|██████████| 1952/1952 [00:00<00:00, 4523.86 examples/s]Map: 100%|██████████| 1952/1952 [00:00<00:00, 4440.49 examples/s]
 Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
-[2024-12-12 21:00:48,703] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-12-12 21:08:35,189] [INFO] [real_accelerator.py:219:get_accelerator] Setting ds_accelerator to cuda (auto detect)
   0%|          | 0/1300 [00:00<?, ?it/s]/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_inductor/compile_fx.py:167: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
   warnings.warn(
-Traceback (most recent call last):
-  File "/gpfs/home/rka28/essay_grader/3_llama_finetune.py", line 230, in <module>
-    main()
-  File "/gpfs/home/rka28/essay_grader/3_llama_finetune.py", line 225, in main
-    trainer.train()
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/trainer.py", line 2123, in train
-    return inner_training_loop(
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/trainer.py", line 2481, in _inner_training_loop
-    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/trainer.py", line 3579, in training_step
-    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/trainer.py", line 3633, in compute_loss
-    outputs = model(**inputs)
-              ^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 465, in _fn
-    return fn(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/utils/operations.py", line 823, in forward
-    return model_forward(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/utils/operations.py", line 811, in __call__
-    return convert_to_fp32(self.model_forward(*args, **kwargs))
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/peft/peft_model.py", line 1642, in forward
-    with self._enable_peft_forward_hooks(**kwargs):
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/peft/peft_model.py", line 1644, in torch_dynamo_resume_in_forward_at_1642
-    return self.base_model(
-           ^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/peft/tuners/tuners_utils.py", line 197, in forward
-    return self.model.forward(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/hooks.py", line 170, in new_forward
-    output = module._old_forward(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py", line 1135, in forward
-    @add_start_docstrings_to_model_forward(LLAMA_INPUTS_DOCSTRING)
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/hooks.py", line 170, in new_forward
-    output = module._old_forward(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py", line 860, in forward
-    @add_start_docstrings_to_model_forward(LLAMA_INPUTS_DOCSTRING)
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py", line 933, in torch_dynamo_resume_in_forward_at_891
-    layer_outputs = self._gradient_checkpointing_func(
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_compile.py", line 32, in inner
-    return disable_fn(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 632, in _fn
-    return fn(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/utils/checkpoint.py", line 489, in checkpoint
-    return CheckpointFunction.apply(function, preserve, *args)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/autograd/function.py", line 575, in apply
-    return super().apply(*args, **kwargs)  # type: ignore[misc]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/utils/checkpoint.py", line 264, in forward
-    outputs = run_function(*args)
-              ^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/hooks.py", line 170, in new_forward
-    output = module._old_forward(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py", line 692, in forward
-    hidden_states = self.mlp(hidden_states)
-                    ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/hooks.py", line 170, in new_forward
-    output = module._old_forward(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py", line 258, in forward
-    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
-                                                                ^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/hooks.py", line 170, in new_forward
-    output = module._old_forward(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/bitsandbytes/nn/modules.py", line 486, in forward
-    out = out.to(inp_dtype)
-          ^^^^^^^^^^^^^^^^^
-torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 358.00 MiB. GPU 0 has a total capacity of 79.14 GiB of which 97.19 MiB is free. Process 3396871 has 70.74 GiB memory in use. Including non-PyTorch memory, this process has 8.29 GiB memory in use. Of the allocated memory 7.07 GiB is allocated by PyTorch, and 735.86 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-[1;34mwandb[0m: 🚀 View run [33mcluster_run_01[0m at: [34mhttps://wandb.ai/yale-som/optim00/runs/9xcwlgy8[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20241212_210006-9xcwlgy8/logs[0m
-Traceback (most recent call last):
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/bin/accelerate", line 10, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/commands/accelerate_cli.py", line 48, in main
-    args.func(args)
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/commands/launch.py", line 1168, in launch_command
-    simple_launcher(args)
-  File "/gpfs/home/rka28/.conda/envs/gofaster00/lib/python3.12/site-packages/accelerate/commands/launch.py", line 763, in simple_launcher
-    raise subprocess.CalledProcessError(returncode=process.returncode, cmd=cmd)
-subprocess.CalledProcessError: Command '['/gpfs/home/rka28/.conda/envs/gofaster00/bin/python3.12', '3_llama_finetune.py']' returned non-zero exit status 1.
-python path executed
-SBATCH FINISHED
+  0%|          | 1/1300 [00:46<16:36:29, 46.03s/it]                                                     0%|          | 1/1300 [00:46<16:36:29, 46.03s/it]  0%|          | 2/1300 [00:53<8:22:34, 23.23s/it]                                                     0%|          | 2/1300 [00:53<8:22:34, 23.23s/it]  0%|          | 3/1300 [01:00<5:48:16, 16.11s/it]                                                    0%|          | 3/1300 [01:00<5:48:16, 16.11s/it]  0%|          | 4/1300 [01:08<4:37:32, 12.85s/it]                                                    0%|          | 4/1300 [01:08<4:37:32, 12.85s/it]  0%|          | 5/1300 [01:11<3:19:42,  9.25s/it]                                                    0%|          | 5/1300 [01:11<3:19:42,  9.25s/it]  0%|          | 6/1300 [01:18<3:04:11,  8.54s/it]                                                    0%|          | 6/1300 [01:18<3:04:11,  8.54s/it]  1%|          | 7/1300 [01:26<2:55:43,  8.15s/it]                                                    1%|          | 7/1300 [01:26<2:55:43,  8.15s/it]  1%|          | 8/1300 [01:30<2:30:35,  6.99s/it]                                                    1%|          | 8/1300 [01:30<2:30:35,  6.99s/it]  1%|          | 9/1300 [01:33<1:59:02,  5.53s/it]                                                    1%|          | 9/1300 [01:33<1:59:02,  5.53s/it]  1%|          | 10/1300 [01:38<2:00:43,  5.62s/it]                                                     1%|          | 10/1300 [01:38<2:00:43,  5.62s/it]  1%|          | 11/1300 [01:45<2:05:51,  5.86s/it]                                                     1%|          | 11/1300 [01:45<2:05:51,  5.86s/it]  1%|          | 12/1300 [01:50<2:02:48,  5.72s/it]                                                     1%|          | 12/1300 [01:50<2:02:48,  5.72s/it]  1%|          | 13/1300 [01:52<1:39:26,  4.64s/it]                                                     1%|          | 13/1300 [01:52<1:39:26,  4.64s/it]  1%|          | 14/1300 [01:54<1:22:19,  3.84s/it]                                                     1%|          | 14/1300 [01:54<1:22:19,  3.84s/it]  1%|          | 15/1300 [01:59<1:30:34,  4.23s/it]                                                     1%|          | 15/1300 [01:59<1:30:34,  4.23s/it]  1%|          | 16/1300 [02:05<1:39:54,  4.67s/it]                                                     1%|          | 16/1300 [02:05<1:39:54,  4.67s/it]  1%|▏         | 17/1300 [02:10<1:39:55,  4.67s/it]                                                     1%|▏         | 17/1300 [02:10<1:39:55,  4.67s/it]  1%|▏         | 18/1300 [02:12<1:21:31,  3.82s/it]                                                     1%|▏         | 18/1300 [02:12<1:21:31,  3.82s/it]  1%|▏         | 19/1300 [02:16<1:24:12,  3.94s/it]                                                     1%|▏         | 19/1300 [02:16<1:24:12,  3.94s/it]  2%|▏         | 20/1300 [02:21<1:31:21,  4.28s/it]                                                     2%|▏         | 20/1300 [02:21<1:31:21,  4.28s/it]  2%|▏         | 21/1300 [02:25<1:33:11,  4.37s/it]                                                     2%|▏         | 21/1300 [02:25<1:33:11,  4.37s/it]  2%|▏         | 22/1300 [02:27<1:15:50,  3.56s/it]                                                     2%|▏         | 22/1300 [02:27<1:15:50,  3.56s/it]  2%|▏         | 23/1300 [02:30<1:12:43,  3.42s/it]                                                     2%|▏         | 23/1300 [02:30<1:12:43,  3.42s/it]  2%|▏         | 24/1300 [02:35<1:23:11,  3.91s/it]                                                     2%|▏         | 24/1300 [02:35<1:23:11,  3.91s/it]  2%|▏         | 25/1300 [02:40<1:29:55,  4.23s/it]                                                     2%|▏         | 25/1300 [02:40<1:29:55,  4.23s/it]  2%|▏         | 26/1300 [02:42<1:15:31,  3.56s/it]                                                     2%|▏         | 26/1300 [02:42<1:15:31,  3.56s/it]  2%|▏         | 27/1300 [02:45<1:12:22,  3.41s/it]                                                     2%|▏         | 27/1300 [02:45<1:12:22,  3.41s/it]  2%|▏         | 28/1300 [02:50<1:22:31,  3.89s/it]                                                     2%|▏         | 28/1300 [02:50<1:22:31,  3.89s/it]  2%|▏         | 29/1300 [02:55<1:27:23,  4.13s/it]                                                     2%|▏         | 29/1300 [02:55<1:27:23,  4.13s/it]  2%|▏         | 30/1300 [02:57<1:11:00,  3.35s/it]                                                     2%|▏         | 30/1300 [02:57<1:11:00,  3.35s/it]  2%|▏         | 31/1300 [02:59<1:04:55,  3.07s/it]                                                     2%|▏         | 31/1300 [02:59<1:04:55,  3.07s/it]  2%|▏         | 32/1300 [03:04<1:18:22,  3.71s/it]                                                     2%|▏         | 32/1300 [03:04<1:18:22,  3.71s/it]  3%|▎         | 33/1300 [03:09<1:23:43,  3.97s/it]                                                     3%|▎         | 33/1300 [03:09<1:23:43,  3.97s/it]  3%|▎         | 34/1300 [03:12<1:22:16,  3.90s/it]                                                     3%|▎         | 34/1300 [03:12<1:22:16,  3.90s/it]  3%|▎         | 35/1300 [03:14<1:06:57,  3.18s/it]                                                     3%|▎         | 35/1300 [03:14<1:06:57,  3.18s/it]  3%|▎         | 36/1300 [03:17<1:03:53,  3.03s/it]                                                     3%|▎         | 36/1300 [03:17<1:03:53,  3.03s/it]  3%|▎         | 37/1300 [03:22<1:16:23,  3.63s/it]                                                     3%|▎         | 37/1300 [03:22<1:16:23,  3.63s/it]  3%|▎         | 38/1300 [03:26<1:21:32,  3.88s/it]                                                     3%|▎         | 38/1300 [03:26<1:21:32,  3.88s/it]  3%|▎         | 39/1300 [03:30<1:23:15,  3.96s/it]                                                     3%|▎         | 39/1300 [03:30<1:23:15,  3.96s/it]  3%|▎         | 40/1300 [03:32<1:06:58,  3.19s/it]                                                     3%|▎         | 40/1300 [03:32<1:06:58,  3.19s/it]  3%|▎         | 41/1300 [03:33<55:32,  2.65s/it]                                                     3%|▎         | 41/1300 [03:33<55:32,  2.65s/it]  3%|▎         | 42/1300 [03:37<1:01:53,  2.95s/it]                                                     3%|▎         | 42/1300 [03:37<1:01:53,  2.95s/it]  3%|▎         | 43/1300 [03:41<1:12:36,  3.47s/it]                                                     3%|▎         | 43/1300 [03:41<1:12:36,  3.47s/it]  3%|▎         | 44/1300 [03:46<1:17:35,  3.71s/it]                                                     3%|▎         | 44/1300 [03:46<1:17:35,  3.71s/it]
