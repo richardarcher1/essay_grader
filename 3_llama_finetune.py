@@ -5,10 +5,14 @@ local_ = False
 if local_:
     base_model = "/home/richardarcher/Dropbox/Sci24_LLM_Polarization/project_/weights_local/models--meta-llama--Meta-Llama-3.1-8B-Instruct/snapshots/0e9e39f249a16976918f6564b8830bc894c89659"
     batch_size = 4
+
 else:
     base_model = "/gpfs/home/rka28/alex/all_weights_all_formats/download_from_hf_in_hf_format/Meta-Llama-3.1-8B-Instruct"
     batch_size = 4
     os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+    import torch
+    torch.set_float32_matmul_precision('high')
+    print("maybe delete this idk")
 
 import pandas as pd
 import polars as pl
