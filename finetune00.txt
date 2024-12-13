@@ -162,4 +162,4 @@ wandb: Syncing run cluster_run_01
 wandb: ⭐️ View project at https://wandb.ai/yale-som/optim00
 wandb: 🚀 View run at https://wandb.ai/yale-som/optim00/runs/5p1adqqg
 TRY BIGGER GPU
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:10<00:32, 10.85s/it]slurmstepd-c18: error: *** JOB 3303239 ON c18 CANCELLED AT 2024-12-12T21:18:34 ***
