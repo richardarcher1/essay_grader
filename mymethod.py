@@ -221,11 +221,11 @@ def main():
     torch.save(dataset_test, "data/mymethod/testing.pt")
     print("TEST SAVED")
 
-    print("NOW RUNNING TRAIN")
-    dataset_train = df_to_dataset(df_train, batch_size, model, tokenizer)
-    print("NOW SAVING TRAIN")
-    torch.save(dataset_train, "data/val.pt")
-    print("TRAIN SAVED")
+    # print("NOW RUNNING TRAIN")
+    # dataset_train = df_to_dataset(df_train, batch_size, model, tokenizer)
+    # print("NOW SAVING TRAIN")
+    # torch.save(dataset_train, "data/training.pt")
+    # print("TRAIN SAVED")
 
     return 1
 
