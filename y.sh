@@ -10,3 +10,5 @@
 # scp -r data/ rka28@hpc-sms.som.yale.edu:/gpfs/home/rka28/essay_grader/data
 
 scp rka28@hpc-sms.som.yale.edu:/gpfs/home/rka28/essay_grader/data/mymethod/training.pt data/mymethod/training.pt
+# scp rka28@hpc-sms.som.yale.edu:/gpfs/home/rka28/essay_grader/data/mymethod/testing.pt data/mymethod/testing.pt
+# scp rka28@hpc-sms.som.yale.edu:/gpfs/home/rka28/essay_grader/data/mymethod/val.pt data/mymethod/val.pt

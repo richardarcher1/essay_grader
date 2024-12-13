@@ -195,37 +195,40 @@ def main():
 
 
     df_train = pl.read_csv("data/imported/training.csv")
+
+    print(df_train.shape)
+
     df_train = add_prompts_to_df(df_train)
     # save_path = "data/mymethod/training.pt"
 
-    df_test = pl.read_csv("data/imported/testing.csv")
-    df_test = add_prompts_to_df(df_test)
+    # df_test = pl.read_csv("data/imported/testing.csv")
+    # df_test = add_prompts_to_df(df_test)
     # save_path = "data/mymethod/testing.pt"
     #
-    df_val = pl.read_csv("data/imported/val.csv")
-    df_val = add_prompts_to_df(df_val)
+    # df_val = pl.read_csv("data/imported/val.csv")
+    # df_val = add_prompts_to_df(df_val)
 
     # df_train = add_prompts_to_df(df_train)
     # df_test = add_prompts_to_df(df_test)
 
 
-    print("NOW OPERATING ON VAL")
-    dataset_val = df_to_dataset(df_val, batch_size, model, tokenizer)
-    print("NOW SAVING VAL")
-    torch.save(dataset_val, "data/mymethod/val.pt")
-    print("VAL SAVED")
+    # print("NOW OPERATING ON VAL")
+    # dataset_val = df_to_dataset(df_val, batch_size, model, tokenizer)
+    # print("NOW SAVING VAL")
+    # torch.save(dataset_val, "data/mymethod/val.pt")
+    # print("VAL SAVED")
+    #
+    # print("NOW RUNNING TEST")
+    # dataset_test = df_to_dataset(df_test, batch_size, model, tokenizer)
+    # print("NOW SAVING TEST")
+    # torch.save(dataset_test, "data/mymethod/testing.pt")
+    # print("TEST SAVED")
 
-    print("NOW RUNNING TEST")
-    dataset_test = df_to_dataset(df_test, batch_size, model, tokenizer)
-    print("NOW SAVING TEST")
-    torch.save(dataset_test, "data/mymethod/testing.pt")
-    print("TEST SAVED")
-
-    # print("NOW RUNNING TRAIN")
-    # dataset_train = df_to_dataset(df_train, batch_size, model, tokenizer)
-    # print("NOW SAVING TRAIN")
-    # torch.save(dataset_train, "data/training.pt")
-    # print("TRAIN SAVED")
+    print("NOW RUNNING TRAIN")
+    dataset_train = df_to_dataset(df_train, batch_size, model, tokenizer)
+    print("NOW SAVING TRAIN")
+    torch.save(dataset_train, "data/mymethod/training.pt")
+    print("TRAIN SAVED")
 
     return 1
 
