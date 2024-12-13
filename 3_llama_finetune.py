@@ -54,8 +54,8 @@ def main():
 
     new_model = "weights/sft/run02"
 
-    PATH_data_to_train_on = "data/1_train_test_split/df_train.csv"
-    PATH_data_to_test_on = "data/1_train_test_split/df_test.csv"
+    PATH_data_to_train_on = "data/imported/training.csv"
+    PATH_data_to_test_on = "data/imported/testing.csv"
 
     print("TRY BIGGER GPU")
 
@@ -66,6 +66,8 @@ def main():
     )
     #
     model = LlamaForCausalLM.from_pretrained(base_model, quantization_config=nf4_config, device_map="auto")
+
+    print(torch.cuda.is_available())
 
     # model = AutoModelForCausalLM.from_pretrained(
     #     base_model,
@@ -125,7 +127,7 @@ def main():
         lst_prompt.append(prompt)
     df_train = df_train.with_columns(pl.Series(lst_system_prompt).alias("instruction"),
                                      pl.Series(lst_prompt).alias("input"))
-    output = [int(i) for i in df_train["stars"].to_list()]
+    output = [int(i) for i in df_train["score"].to_list()]
     df_train = df_train.with_columns(pl.Series(output).alias("output"))
 
     lst_system_prompt, lst_prompt = [], []
@@ -135,7 +137,7 @@ def main():
         lst_prompt.append(prompt)
     df_test = df_test.with_columns(pl.Series(lst_system_prompt).alias("instruction"),
                                    pl.Series(lst_prompt).alias("input"))
-    output = [int(i) for i in df_test["stars"].to_list()]
+    output = [int(i) for i in df_test["score"].to_list()]
     df_test = df_test.with_columns(pl.Series(output).alias("output"))
 
     train_dataset = Dataset.from_polars(df_train)
